@@ -10,8 +10,22 @@ I am a beginner of Lilypond and I have been focusing on the completion of music 
 
 And the pdf file will be generated in the `target/` directory. Generated midi file may lack of appropriate effects. PRs are welcome.
 
+On linux systems you can simply run
+
+```./build.sh```
+
+to compile all the scores.
+
 ## Copyright
 
 The original songs are written by their respective authors. I do not own the original songs, and I do not claim to own them. The scores are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to share and adapt the scores, but you must give appropriate credit, and you must not use the scores for commercial purposes.
 
 曲谱仅供学习参考，曲目版权归原作者所有。
+
+## Credits
+
+- [LilyPond](http://lilypond.org/)
+- ウグイスカグラ
+- Sphere
+- [Tommy被注册了](https://b23.tv/SY3hsbx)
+- [苹果糖aecro](https://b23.tv/m4gN1p9)
