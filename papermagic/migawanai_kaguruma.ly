@@ -46,7 +46,7 @@ right = \relative { \repeat volta 2 {
   \alternative {
     \volta 1 { <gis dis>4) cis,4. dis8(bis2.) }
     \volta 2 { <gis cis e>4 fis'4. e8(cis4) dis4. a'8(|
-               <gis dis cis>4) bis,2~ 4 r2 r2. }
+               <gis dis cis>4) bis,2 R2. }
   }
 }
   \bar "|."
@@ -72,7 +72,7 @@ left = \relative {
   \aeaeb gis,8(dis' gis dis ais'4) |
   cis,8(gis' cis gis' b,4) b,2. fis2. |
   { <gis dis'>2. r2. }
-  { e2. b2. gis'4 r2 r4 <cis,~ gis'~ cis~ e~ gis~>2 4 r2 }
+  { e2. b2. gis'4 r2  <cis, gis' cis e gis>2. }
 }
 
 \score {
