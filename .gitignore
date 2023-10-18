@@ -1,2 +1,7 @@
 *.pdf
+*.ps
+*.svg
 *.midi
+*.mid
+*.log
+*~

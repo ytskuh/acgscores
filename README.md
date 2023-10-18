@@ -6,7 +6,7 @@ This repository contains the music scores for the ACG songs I like. The scores a
 
 I am a beginner of Lilypond and I have been focusing on the completion of music scores rather than the compilation process. Currently you shall use the following command to compile the scores:
 
-```lilypond -o target/ <score>.ly```
+```lilypond -o _target/ <score>.ly```
 
 And the pdf file will be generated in the `target/` directory. Generated midi file may lack of appropriate effects. PRs are welcome.
 
