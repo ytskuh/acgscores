@@ -42,9 +42,9 @@ right = \relative { \repeat volta 2 {
   e8[dis cis <gis~ cis,~>]) 8. <fis dis>16 (<e gis>4) r2 |
   <gis e>4. <gis e>8(<a fis> <b gis> <a dis, bis>4) <gis dis bis> dis' |
   <gis, b dis>4.\arpeggio cis8(dis e <gis, b fis'>4.\arpeggio) e'8(dis cis |
-  <b cis,>4) a4.b8(
+  <b cis,>4\arpeggio) a4.b8(
   \alternative {
-    \volta 1 { <gis dis>4) cis,4. dis8(bis2.) }
+    \volta 1 { <gis dis>4\arpeggio) cis,4. dis8(bis2.) }
     \volta 2 { <gis cis e>4 fis'4. e8(cis4) dis4. a'8(|
                <gis dis cis>4) bis,2 R2. }
   }
@@ -62,21 +62,22 @@ left = \relative {
   a,8(e' a2)		b,8(gis' b2) |
   \cismt a,8([e' a e b' e,]) | b2. |
   cis8([gis' cis dis] e4) | b,,8([b'] gis'2) |
-  <a, e'>8([a] e'4) dis' | <b, b'>2. |
+  a,,8([a'] e'4) dis' | <b, b,>2. |
   cis,8(gis' cis gis'~) 4 | b,,8(gis' b e gis4) |
-  a,8(e b' cis e4) | <b b,>2. |
+  a,,8(e' b' cis e4) | <b b,>2. |
   \aeaeb \aeaeb |
   cis,8(gis' cis gis b'4) | cis,,8(gis' dis' e b'4) |
   \aeaeb \aeaeb |
   cis,,8(gis' dis' gis, e'4) cis,8(gis' cis gis dis'4) |
   \aeaeb gis,8(dis' gis dis ais'4) |
-  cis,8(gis' cis gis' b,4) b,2. fis2. |
-  { <gis dis'>2. r2. }
-  { e2. b2. gis'4 r2  <cis, gis' cis e gis>2. }
+  cis,8(gis' cis gis' b,4) b,2. fis2.\arpeggio |
+  { gis2. R2. }
+  { e2. dis2. gis2.  <cis, gis' cis e gis>2. }
 }
 
 \score {
   \new PianoStaff <<
+    \set PianoStaff.connectArpeggios = ##t
     \new Staff = "right" \with {
       midiInstrument = "acoustic grand"
     } \right
