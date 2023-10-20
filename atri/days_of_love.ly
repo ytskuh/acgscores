@@ -18,14 +18,14 @@ global = {
 }
 
 right = \relative c'' {
-  b'8 <ais fis>~| 2 r8 dis,8 e <fis dis>~ |2 r4 b,8 <cis ais>~---> |
-  8 dis4-- b8~2 | r2 r4 b'8 <ais fis>~|
-  2 r8 dis,8 e <fis dis>~ |4. <fis cis'>8~->8 b8 cis <cis ais fis>~|
-  8 dis4 <ais fis>8~8 <b fis>4. | R1
+  b'8-- <ais fis>~--| 2 r8 dis,8 e <fis dis>~-- |2 r4 b,8 <cis ais>~---> |
+  8 dis4-- b8~2 | r2 r4 b'8-- <ais fis>~--|
+  2 r8 dis,8 e <fis dis>~-- |4. <fis cis'>8~8 b8 cis <cis ais fis>~--|
+  8 dis4-- <ais fis>8~--8 <b fis>4.-- | R1
   \ottava #1
-  <fis gis fis'>4-. <gis cis fis>-. <gis ais cis fis>-. <gis ais cis fis>-. |
+  <fis gis cis fis>4-. <gis cis fis>-. <gis ais cis fis>-. <gis ais cis fis>-. |
   <e fis gis b e>-. <e fis gis b e>-. <e gis b>-. <e gis b>-. |
-  <fis gis fis'>-. <gis cis fis>-. <gis ais cis fis>-. <gis ais cis fis>-. |
+  <fis gis cis fis>-. <gis cis fis>-. <gis ais cis fis>-. <gis ais cis fis>-. |
   \ottava #0
   r8 <dis, fis dis'>4 <cis e gis cis> gis'8 <dis fis dis'> <<{<dis gis b>~|
   2}\\{s8 gis,2}>> r8 <gis' e> <ais fis>  <b gis b,>~|
@@ -58,14 +58,14 @@ right = \relative c'' {
 
 left = \relative c' {
   \clef bass \ottava #1 
-  r4\sustainOn | dis8->(b' cis fis)~2 | dis,8->(b' cis  fis)~2 |
+  r4\sustainOn | dis8--(b' cis fis--)~2 | dis,8->(b' cis->  fis--)~2 |
   \ottava #0
   \relative c { e8->(b' cis fis)~2 }
   \relative c { e8->\sustainOn(b' cis fis)~2 }
   
-  \relative c { dis8->\sustainOn(b' cis fis)~2 }
-  \relative c { dis8->(b' cis fis)~2 }
-  \relative c { e8->\sustainOn(b' cis fis)~2 } |
+  \relative c { dis8->\sustainOn(b' cis fis--)~2 }
+  \relative c { dis8->(b' cis fis--)~2 }
+  \relative c { e8->\sustainOn(b' cis fis--)~2 } |
 
   e,,8->\sustainOn(b' cis fis \clef treble <e b'>4) r8\sustainOff\sustainOn b'8 |
   cis4. cis8 cis4 dis8 b~|8 ais4 b2 b8\sustainOff\sustainOn |
@@ -95,12 +95,10 @@ left = \relative c' {
 \score {
   \new PianoStaff <<
     \set PianoStaff.connectArpeggios = ##t
-    \new Staff = "right" \with {
-      midiInstrument = "acoustic grand"
-    } { \global \right \bar "|."}
-    \new Staff = "left" \with {
-      midiInstrument = "acoustic grand"
-    } { \global \left }
+    \new Staff = "right" \with { midiInstrument = "acoustic grand" }
+    { \global \right \bar "|."}
+    \new Staff = "left" \with { midiInstrument = "acoustic grand" } 
+    { \global \left }
   >>
   \layout { }
   \midi {
