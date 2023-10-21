@@ -2,6 +2,10 @@
 
 This repository contains the music scores for the ACG songs I like. The scores are written in LilyPond.
 
+## Download
+
+You can download the scores in the [release page](https://github.com/ytskuh/acgscores/releases).
+
 ## Compiling
 
 I am a beginner of Lilypond and I have been focusing on the completion of music scores rather than the compilation process. Currently you shall use the following command to compile the scores:
