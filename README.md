@@ -24,8 +24,4 @@ The original songs are written by their respective authors. I do not own the ori
 
 ## Credits
 
-- [LilyPond](http://lilypond.org/)
-- [Tommy被注册了](https://b23.tv/SY3hsbx)
-- [苹果糖aecro](https://b23.tv/m4gN1p9)
-- [锂钫银_](https://space.bilibili.com/1632770256)
-- [陶雪森](https://space.bilibili.com/397695373)
+[Tommy被注册了](https://space.bilibili.com/52992607) [苹果糖aecro](https://space.bilibili.com/351900744) [锂钫银_](https://space.bilibili.com/1632770256) [陶雪森](https://space.bilibili.com/397695373)
