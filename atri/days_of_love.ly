@@ -30,7 +30,7 @@ right = \relative c'' {
   \ottava #0
   <<{ <gis ais cis fis>-. |s8}\\{\change Staff="left" \stemUp dis8 \change Staff="right" \stemDown <e gis, e>8~8}>>
 
-   <dis, fis dis'>4( <cis e gis cis>gis'8 <dis fis b dis> <dis b'>->
+   <dis, fis dis'>4--( <cis e gis cis>--gis'8 <dis fis b dis>-> <dis b'>->
   gis2--) r8 <gis e> <ais fis>  <b gis b,>~|
   4. <b gis>8 <b gis> <gis eis> <b gis eis> <b dis, gis dis'>|
   <b fis dis dis'> <ais cis cis,> <ais cis cis,> <b gis b,>16 <ais~ cis~ cis,> <ais cis>2  |
@@ -38,12 +38,12 @@ right = \relative c'' {
   
   <b fis dis>4. b8 <b fis e b> ais <ais e> <b b,> |
   <cis ais fis> <dis b> <e cis fis,> <dis b dis,> g,4. <cis ais>8 |
-  <cis ais cis,>8. << {<b gis dis>16~4}\\ {s16 <fis cis>4} >> dis4 r8  <ais' fis>8 |
-  <ais fis cis ais> b16 <ais fis cis ais>16~8 fis16 <gis eis >16~4 r8 <ais fis>8 |
+  <cis ais cis, dis>8. <b gis dis>16-- <fis cis>4 dis4 r8  <ais' fis>8 |
+  <ais fis cis ais> b16 <ais fis cis ais>16 dis,8 fis16 <gis eis >16~4 r8 <ais fis>8 |
   <b gis cis,>8. <ais fis>16~8 fis8 <fis ais cis e>8. <ais dis>16~8 cis8 |
   <cis ais e> dis16 <cis ais e>16~8 <b gis dis>8~4 <ais fis dis>8 b16 <ais fis cis>16~ |
   8 <gis e b>4 fis,8 gis8 gis'8 <b e,> <cis e,> |
-  <dis b fis>8<cis ais>8<cis ais>8<b gis>16<cis ais>16-- ais,4<b' fis e>8 ais |
+  <dis b fis>8-><cis ais>8<cis ais>8<b gis>16<cis ais>16-- ais,4<b' fis e>8 ais |
   
   <b fis dis>4. b8 <b fis e b> ais <ais e> <b b,> |
   <cis ais fis> <dis b> <e cis fis,> <dis b dis,> g,4. <cis ais>8 |
@@ -80,9 +80,9 @@ left = \relative c' {
   
   dis,,8\sustainOn b' <fis' b>4 e,8 b' <gis' ais>4 |
   fis,8\sustainOn cis' b'4 g,8 dis' ais'4 | gis,8 dis' gis ais8 b ais gis4 |
-  eis,8 dis' <gis dis'> b cis b gis4 | fis,8 cis' <ais' cis>4 e,8 cis' <ais' cis>4 |
+  eis,8 dis' gis b cis b gis4 | fis,8 cis' <ais' cis>4 e,8 cis' <ais' cis>4 |
   dis,,8 cis' <ais' cis>4 gis,8 dis' <gis b>4 |
-  cis,,8 gis' e' <b dis,> e, b' <gis' dis'>4 |
+  cis,,8 gis' e' <b dis,> <e, b'> b' <gis' dis'>4 |
   fis,8 cis' fis b e,, cis' fis cis' |
   
   dis,,8 b' <fis' b>4 e,8 b' <gis' ais>4 |

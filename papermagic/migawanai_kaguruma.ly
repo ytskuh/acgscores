@@ -29,9 +29,9 @@ right = \relative { \repeat volta 2 {
   \egcd dis''4 r2 
   \egcd { <gis, b dis>4\arpeggio <e gis> <dis fis> } |
   \egcf { <gis cis dis>8\arpeggio([gis'] dis4.) b8( } |
-  <e, a cis>4) r2 | 
+  <e, a cis>4\arpeggio) r2 | 
   \gf |
-  \egcd { <e gis dis'>4\arpeggio e2 } |
+  \egcd { <e gis dis'>4\arpeggio <e gis>2 } |
   \egcd { <e gis dis'>4\arpeggio <dis fis>2} |
   \egcf { <gis dis'>8\arpeggio([gis'] dis4.) b8( } |
   <e, a cis>2\arpeggio) r4 |
@@ -45,7 +45,7 @@ right = \relative { \repeat volta 2 {
   <b cis,>4\arpeggio) a4.b8(
   \alternative {
     \volta 1 { <gis dis>4\arpeggio) cis,4. dis8(bis2.) }
-    \volta 2 { <gis cis e>4 fis'4. e8(cis4) dis4. a'8(|
+    \volta 2 { <gis cis e gis>4 fis'4. e8(cis4) dis4. a'8(|
                <gis dis cis>4) bis,2 R2. }
   }
 }
