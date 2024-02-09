@@ -1,11 +1,12 @@
-% Based on works of 
+% Based on works of Jnundead https://www.youtube.com/watch?v=kDHUEbRNByI
+% and sshr http://game-musicsheet.blog.jp/archives/9303079.html
 
 \version "2.24.3"
 
 \header {
   title = "XX: Calling"
   subtitle = "若能与你再次相见"
-  composer = "西坂恭平"
+  composer = "miyaji, tiko-μ, 西坂恭平"
 }
 
 \paper {
@@ -21,11 +22,11 @@ global = {
 
 righta = \relative c'' {
   fis8 cis' <b e, fis>4\arpeggio~16 b16 a cis~4  fis,8 cis' |
-  <b e, a fis>4\arpeggio~16 b cis e~4  <gis, b,>8 <a cis,> |
+  <b e, fis>4\arpeggio~16 b cis e~4  <gis, b,>8 <a cis,> |
   <gis b, cis>8\arpeggio fis16 fis~16 cis fis a gis8 fis16 fis~16 cis fis a |
   <b b, e fis>8\arpeggio a16 b~16 a~8 <cis e, a>4\arpeggio-"rit." <fis,, fis,>8 <cis' cis,> |
   <b e, fis b,>4\arpeggio-"a tempo"~16 <b e,> <a fis> <cis e,>~4 fis,8 cis' |
-  <b e, gis>4\arpeggio-"rit."\< <cis e, gis> <e gis, b e,> <gis gis, b cis> |
+  <b e, gis>4\arpeggio-"rit."\< <cis e, gis> <e gis, b e,> <gis gis, b cis>\fermata |
 }
 
 lefta = \relative c' {
@@ -37,7 +38,7 @@ lefta = \relative c' {
 gae = \relative c' { gis16 a e' }
 
 rightb = \relative c' {
-  gis16\p-"a tempo" a e'\gae\gae\gae \gae\gae\gae\gae \gae\gae gis16 a |
+  gis16\p-"a tempo" a e'\gae\gae\gae \gae\gae\gae\gae \gae\gae gis,16 a |
   \gae\gae\gae\gae \gae\gae\gae\gae gis16 a b e gis a b e\fermata
 }
 
@@ -59,7 +60,7 @@ rightc = \relative c'' {
 
 leftc = \relative c {
   fis8 cis'~4 cis,8 b'~4 | d,8 b'~4 e,8 b'~4 |
-  fis8 b~8 r8 cis,8 e~4 | d8 fis~4 e8 fis gis b |
+  fis8 a~4 cis,8 e~4 | d8 fis~4 e8 fis gis b |
   fis,8 cis' a'4 cis,,8 gis' e'4 | d,8 a' e' fis e, b' fis' gis | 
   fis, cis' fis a cis,, gis' e' gis | d, a' e' fis e, fis' gis b
 }
@@ -68,8 +69,8 @@ rightd = \relative c'' {
   gis'16 a a, a' gis a a, a' gis a a, a' gis a a, a' |
   <b, e fis b>16\arpeggio b e gis b, e a gis b, fis' e8~8 <cis e, fis>16\arpeggio d |
   <e cis a>4.\arpeggio <cis e,>16 b <a e>4 <b eis a>8\arpeggio <b eis a> |
-  <b e b'>4.\arpeggio <a' a,>8 <b, e gis>8.\arpeggio b16 e8 <a e>~16
-  <b, e>\arpeggio~8 a' gis16 a~8 r8 e8 a |
+  <b e b'>4.\arpeggio <a' a,>8 <b, e gis>8.\arpeggio b16 e8 <a e>
+  <b, e>8.\arpeggio a'16~16 gis16 a8~8 r8 e8 a |
   <b, e fis b>8.\arpeggio <b, d>16 cis8~16 <d' fis,>16 cis 
   b16~8 <fis fis'>8 <b b'>
   <cis fis gis cis>8\arpeggio
@@ -83,8 +84,8 @@ leftd = \relative c {
   d,16 a' d e fis a d, a d, a' d e fis a e, e' |
   fis,16 cis' gis' a cis e~8 fis,,16 cis' gis' a fis, cis' e, cis' |
   d, a' d e fis a d,, d' cis, gis' cis8 eis,16 cis'~16 eis16 |
-  fis,16 cis' gis' a cis e fis,, fis' e, cis' e8~16 e,~8~16
-  b'' fis' a~4 a,16 fis' a b~4 |
+  fis,16 cis' gis' a cis e fis,, fis' e, cis' e8~16 e,~8
+  b''16 fis' a8~4 a,16 fis' a b~4 |
   g,,16 d' g a~8 fis8~16 g,16 d'8 g g, |
   <<{ cis,1 }\\{s4. s16 gis'' fis cis-- fis gis cis fis, cis gis} >> |
   <cis, cis,>16 gis'32 cis eis gis cis r32 r8 r32 eis gis cis eis gis r16 r8 r4 |
@@ -142,7 +143,7 @@ leftf = \relative c {
 
 rightg = \relative c'' {
   \time 6/8
-  r4 cis,16 a' gis4.  <a, cis e>4\arpeggio 
+  r8. a,16 cis16 a' gis4.  <a, cis e>4\arpeggio 
   fis'4. fis'16 gis <a, cis a'>4\arpeggio <cis cis'>8 <e a e'>4\arpeggio
   gis8 <fis cis a>2\arpeggio~8 fis,16 gis 
   <a cis, a>4\arpeggio b8 <gis cis, b>4 e8 cis2\arpeggio~8
@@ -154,7 +155,7 @@ rightg = \relative c'' {
 }
 
 leftg = \relative c {
-  fis,16 cis' gis' a~8 e,16 cis' e a~8 | <d,, a' d>2.\arpeggio |
+  fis,16 cis' gis' r8. e,16 cis' e a8. | <d,, a' d>2.\arpeggio |
   fis'16 cis' fis gis~8 gis,16 e'  gis4 | <d, a'>2.\arpeggio |
   fis,16 cis' gis' a b8 e,,16 cis' e b'~8 <d, fis a>2.\arpeggio |
   b16 fis'~16 a16~8  <b gis cis,>4. |
