@@ -30,7 +30,7 @@ righta = \relative c'' {
 }
 
 lefta = \relative c' {
-  r4 <d a'>1 <e~ a>2 <e gis>2 |  fis,8 cis' fis gis a4 fis8 cis |
+  r4 <d a'>1 <e~ a>2 <e gis>2 |  fis,8 cis'-2 fis-1 gis-2 a4 fis8 cis |
   fis,8 cis' fis gis \clef bass e, cis'~4 |
   d,,8 a' e' fis a2 | e,8 b' e gis~8 b~4 |
 }
@@ -72,8 +72,8 @@ rightd = \relative c'' {
   <b e b'>4.\arpeggio <a' a,>8 <b, e gis>8.\arpeggio b16 e8 <a e>
   <b, e>8.\arpeggio\p a'16~16 gis16 a8~8 r8 e8-> a |
   <b, e fis b>4.\arpeggio\mf r16 <d fis,>-> cis-> b16->~8 <fis fis'>8-> <b b'>->
-  <cis fis gis cis>8->\arpeggio
-  \times 2/3 {gis'16 fis cis} gis16 fis cis \change Staff="left" gis \change Staff="right" r2 |
+  <cis fis gis cis>16->\arpeggio
+  gis'16 fis cis gis16 fis cis \change Staff="left" gis \change Staff="right" r2 |
   <eis gis cis>16\arpeggio r16 r8 gis32 cis eis gis cis eis, gis cis eis32 gis
   <cis, cis'>16 cis' eis gis8 cis8~
   cis2\fermata r4 <fis,, fis,>8->\f <cis cis'>-> |
@@ -81,9 +81,9 @@ rightd = \relative c'' {
 
 leftd = \relative c {
   d,16 a' d e fis a d, a d, a' d e fis a e, e' |
-  fis,16 cis' gis' a cis e~8 fis,,16 cis' gis' a fis, cis' e, cis' |
+  fis,16 cis'-2 gis'-1 a-1 cis-2 e-1~8 fis,,16 cis' gis' a fis, cis' e, cis' |
   d, a' d e fis a d,, d' cis, gis' cis8 eis,16 cis'~16 eis16 |
-  fis,16 cis' gis' a cis e fis,, fis' e, cis' e8~16 e,~8
+  fis,16 cis' gis'-1 a-1 cis-2 e fis,, fis' e, cis' e8~16 e,~8
   b''16 fis' a8~4 a,16 fis' a b~4 |
   g,,16 d' g <b d>-> cis-> b-> fis8~8 g,16 d'16~16 g~16 g,16 |
   <<{ cis,1 }\\{s2 fis'16 cis-- fis gis cis-> fis, cis gis} >> |
@@ -98,8 +98,8 @@ righte = \relative c'' {
   <gis a,>8 <fis cis>16 <fis cis>~16 cis fis a |
   <b, e fis b>8\arpeggio <a' e>16 <b e,>~16 <a e a,>~8 
   <cis, gis' cis>\arpeggio \times 2/3 {cis'16 gis fis} \times 2/3{cis gis fis} cis8 |
-  <b e fis b>8.\arpeggio <e b>16~16 <b' e,>16 a <cis e,>~4 \grace {<fis, cis>32} <fis cis>8 <cis cis'> |
-  <b e fis b>4\arpeggio~16 <b' e,> cis <e a, e>~4 r16 <a cis,> <gis b,> <a cis,> |
+  <b e fis b>8.->\arpeggio <e b>16~16 <b' e,>16 a <cis e,>~4 \grace {<fis, cis>32} <fis cis>8 <cis cis'>-> |
+  <b e fis b>4->\arpeggio~16 <b' e,> cis <e a, e>~4 r16 <a cis,> <gis b,> <a cis,> |
   r <a, cis,> <gis b,> <a cis,> r <a' cis,> <gis b,> <a cis,>
   r <a, cis,> <gis b,> <a cis,> r <a' cis,> <gis b,> <a cis,> |
   <b fis e b>8\arpeggio <a a,>16 <b b,>~16 <cis cis,>~8 
@@ -109,25 +109,25 @@ righte = \relative c'' {
   <b e fis b>8.->\arpeggio <b fis e>16~16 <b b'> <cis cis'> <e e'>~4 <cis b gis'>8 <cis a'> |
   <b cis gis'>8\arpeggio <cis fis>16 <cis fis>~16 cis fis a
   <gis cis, a>8\arpeggio <cis, fis>16 <cis fis>~16 cis fis a |
-  <b fis e b>4\arpeggio <gis b,>8 <a cis,> <gis cis, b>\arpeggio <fis cis> <e b> cis |
+  <b fis e b>4\arpeggio <gis b,>8 <a cis,> <gis cis, b>\arpeggio <fis cis>\> <e b> cis\! |
   <b d fis>8.\arpeggio\mp gis'16~8 <a e b>8\arpeggio~8 e e' cis |
   <e, a b>8.\arpeggio cis'16~8 b8~4 gis,8\f a
 }
 
 lefte = \relative c {
   d,16 a' d e fis4 d,16 a' d fis~16 d,16~16 d'16 |
-  e, b' e fis gis8 e e,16 b' e gis~16 e,~16 e' |
-  fis, cis' gis' a cis e fis, cis fis, cis' gis' a cis e~8 |
+  e, b' e-1 fis-2 gis8-1 e e,16 b' e gis~16 e,~16 e' |
+  fis, cis' gis'-1 a-1 cis-2 e-1 fis, cis fis, cis' gis' a cis e~8 |
   fis,,16 cis' fis gis a8 fis16 cis e, cis' e4 e,8 |
   d16 a' d e fis4 d,16 a' d fis~16 d,~16 d' |
   a e' a e' cis4 a,16 e' a a' cis,8 a,8 |
-  e16 b' e fis gis8 e e,16 b' e fis gis8 e,16 e' |
+  e16 b' e-1 fis-2 gis8-1 e e,16 b' e fis gis8 e,16 e' |
   fis, cis' fis gis a8 fis16 cis \times 2/3 {fis,8-> cis'-> fis->} \times 2/3 {e,-> cis'-> e->} |
   d,8 a'16 d fis4 d,16 a' d e d8 d,16 d' |
   e, b' e fis gis8 e e,16 b' e gis~16 e,~16 e' |
   fis, cis' gis' a cis e fis, cis fis, cis' gis'8 a8 fis |
-  fis,16 cis' fis gis~16 a~8 e,16 cis'~16 e~16 gis~16 b\fermata |
-  b, fis' a b~8 <cis, a'>~2 | <d' fis a d>4.\arpeggio <e gis>8~2 |
+  fis,16 cis' fis gis~16 a~8 e,16 cis'~16 e~16 gis~16 b |
+  b, fis' a b~8 <cis, a'>~2 | \clef treble <d' fis a d>4.\arpeggio <e gis>8~2 \clef bass|
 }
 
 rightf = \relative c'' {
@@ -167,7 +167,7 @@ leftg = \relative c {
     \new Dynamics {
       s4s1s s s2s2-"rit." s1-"a tempo" s-"rit." 
       s-"a tempo" s2s2-"rit."s1-"a tempo"s2s2-"rit."s1-"a tempo"s s s s s s s
-      s s s s s s2. s4-"rit." s8 s8-"a tempo" s2. s1 s s s s s s s s s s s s s2.
+      s s s s s s2. s4-"rit." s16 s8.-"a tempo" s2. s1 s s s s s s s s s s s s s2.
       s4-"rit." s1-"a tempo" s s s s s4. s4.-"rit." s2.-"a tempo" s s s s s4 s2-"rit."
     }
     \set PianoStaff.connectArpeggios = ##t
